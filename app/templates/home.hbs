@@ -1,0 +1,12 @@
+{{#each model as |post|}}
+  <article class="postInfo">
+    <img src="{{post.img_url}}" alt="">
+    <section>
+      <h3>{{post.title}} | Likes: {{post.like}}</h3>
+      <p>{{post.description}}</p>
+      <p>{{post.created}} | Comments: {{post.comments.length}}</p>
+    </section>
+  </article>
+{{/each}}
+
+{{outlet}}
